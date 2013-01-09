@@ -18,3 +18,4 @@ Unpack and move to `openFrameworks/addons/` folder before using.
 4. use GUI POSITION(s) to adjust objects on screen.
                   
 #ENJOY!
+![Smack The Snowman](bin/data/smackthesnowman.png)
