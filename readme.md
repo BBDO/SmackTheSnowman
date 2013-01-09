@@ -2,8 +2,9 @@
 Was a quick holiday kinect project made over the course of a few days at BBDO NYC.
 We wanted to make something fun to celebrate the holiday season that all employees could enjoy.
 
-Created by Mathias Appelblad, Sermad Buni, and Jason Walters
-Developed by Jason Walters
+Created by Mathias Appelblad, Sermad Buni, Jason Walters, and Michael Enerva.
+    Developed by Jason Walters
+    Artwork by Michael Enerva
 
 Included are all required addon's in Addons.zip, located in `bin/data/`.
 Unpack and move to `openFrameworks/addons/` folder before using.
