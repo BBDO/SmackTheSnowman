@@ -1,0 +1,118 @@
+<controls>
+    <SliderInt_nearThresh>
+        <name>nearThresh</name>
+        <value>4</value>
+    </SliderInt_nearThresh>
+    <SliderInt_farThresh>
+        <name>farThresh</name>
+        <value>0</value>
+    </SliderInt_farThresh>
+    <Toggle_openCVThresh>
+        <name>openCVThresh</name>
+        <value>0</value>
+    </Toggle_openCVThresh>
+    <Toggle_depthNearWhite>
+        <name>depthNearWhite</name>
+        <value>0</value>
+    </Toggle_depthNearWhite>
+    <SliderInt_camera_tilt>
+        <name>camera tilt</name>
+        <value>18</value>
+    </SliderInt_camera_tilt>
+    <SliderFloat_music_volume>
+        <name>music volume</name>
+        <value>0.092647061</value>
+    </SliderFloat_music_volume>
+    <Toggle_0_background>
+        <name>0 background</name>
+        <value>1</value>
+    </Toggle_0_background>
+    <Toggle_1_snow>
+        <name>1 snow</name>
+        <value>1</value>
+    </Toggle_1_snow>
+    <Toggle_2_smoke>
+        <name>2 smoke</name>
+        <value>1</value>
+    </Toggle_2_smoke>
+    <Toggle_3_clouds>
+        <name>3 clouds</name>
+        <value>1</value>
+    </Toggle_3_clouds>
+    <Toggle_4_contours>
+        <name>4 contours</name>
+        <value>1</value>
+    </Toggle_4_contours>
+    <Toggle_5_snowman>
+        <name>5 snowman</name>
+        <value>1</value>
+    </Toggle_5_snowman>
+    <Toggle_6_comic_bubbles>
+        <name>6 comic bubbles</name>
+        <value>1</value>
+    </Toggle_6_comic_bubbles>
+    <Toggle_7_sounds>
+        <name>7 sounds</name>
+        <value>1</value>
+    </Toggle_7_sounds>
+    <Toggle_8_joints>
+        <name>8 joints</name>
+        <value>0</value>
+    </Toggle_8_joints>
+    <SliderInt_snow_amount>
+        <name>snow amount</name>
+        <value>200</value>
+    </SliderInt_snow_amount>
+    <SliderInt_snow_frequency>
+        <name>snow frequency</name>
+        <value>5</value>
+    </SliderInt_snow_frequency>
+    <SliderInt_snow_max_size>
+        <name>snow max size</name>
+        <value>20</value>
+    </SliderInt_snow_max_size>
+    <SliderFloat_snow_speed>
+        <name>snow speed</name>
+        <value>0.788235307</value>
+    </SliderFloat_snow_speed>
+    <SliderInt_smoke_amount>
+        <name>smoke amount</name>
+        <value>33</value>
+    </SliderInt_smoke_amount>
+    <SliderInt_smoke_frequency>
+        <name>smoke frequency</name>
+        <value>46</value>
+    </SliderInt_smoke_frequency>
+    <SliderInt_smoke_max_size>
+        <name>smoke max size</name>
+        <value>22</value>
+    </SliderInt_smoke_max_size>
+    <SliderFloat_smoke_speed>
+        <name>smoke speed</name>
+        <value>1.023529410</value>
+    </SliderFloat_smoke_speed>
+    <SliderInt_clouds_amount>
+        <name>clouds amount</name>
+        <value>1</value>
+    </SliderInt_clouds_amount>
+    <SliderInt_clouds_frequency>
+        <name>clouds frequency</name>
+        <value>1</value>
+    </SliderInt_clouds_frequency>
+    <SliderInt_clouds_size>
+        <name>clouds size</name>
+        <value>8</value>
+    </SliderInt_clouds_size>
+    <SliderFloat_clouds_speed>
+        <name>clouds speed</name>
+        <value>0.164705887</value>
+    </SliderFloat_clouds_speed>
+    <SliderInt_comic_fade>
+        <name>comic fade</name>
+        <value>8</value>
+    </SliderInt_comic_fade>
+    <SliderInt_reverse_gravity>
+        <name>reverse gravity</name>
+        <value>1000</value>
+    </SliderInt_reverse_gravity>
+</controls>
