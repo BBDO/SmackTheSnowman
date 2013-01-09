@@ -11,7 +11,7 @@ Unpack and move to `openFrameworks/addons/` folder before using.
 *All artwork is property of BBDO and can not be used for commercial use.*
 
 How to use
-1. define your display resolution in main.cpp.
+1. define your display resolution in main.cpp.\n
 2. press spacebar to access GUI.
 3. press / to toggle fullscreen.
 4. use GUI POSITION(s) to adjust objects on screen.
