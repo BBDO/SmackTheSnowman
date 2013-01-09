@@ -1,4 +1,6 @@
 # Smack The Snowman
+![Smack The Snowman](https://raw.github.com/jasonrwalters/SmackTheSnowman/master/bin/data/smackthesnowman.png)
+
 Was a quick holiday kinect project made over the course of a few days at BBDO NYC.
 We wanted to make something fun to celebrate the holiday season that all employees could enjoy.
 
@@ -18,4 +20,3 @@ Unpack and move to `openFrameworks/addons/` folder before using.
 4. use GUI POSITION(s) to adjust objects on screen.
                   
 #ENJOY!
-![Smack The Snowman](https://raw.github.com/jasonrwalters/SmackTheSnowman/master/bin/data/smackthesnowman.png)
