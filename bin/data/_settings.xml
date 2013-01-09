@@ -59,6 +59,90 @@
         <name>8 joints</name>
         <value>0</value>
     </Toggle_8_joints>
+    <SliderInt_world_x>
+        <name>world x</name>
+        <value>0</value>
+    </SliderInt_world_x>
+    <SliderInt_world_y>
+        <name>world y</name>
+        <value>525</value>
+    </SliderInt_world_y>
+    <SliderInt_world_z>
+        <name>world z</name>
+        <value>0</value>
+    </SliderInt_world_z>
+    <SliderInt_snowman_x>
+        <name>snowman x</name>
+        <value>0</value>
+    </SliderInt_snowman_x>
+    <SliderInt_snowman_y>
+        <name>snowman y</name>
+        <value>-220</value>
+    </SliderInt_snowman_y>
+    <SliderInt_snowman_z>
+        <name>snowman z</name>
+        <value>-400</value>
+    </SliderInt_snowman_z>
+    <SliderInt_contour_x>
+        <name>contour x</name>
+        <value>0</value>
+    </SliderInt_contour_x>
+    <SliderInt_contour_y>
+        <name>contour y</name>
+        <value>-423</value>
+    </SliderInt_contour_y>
+    <SliderInt_contour_z>
+        <name>contour z</name>
+        <value>0</value>
+    </SliderInt_contour_z>
+    <SliderInt_snow_x>
+        <name>snow x</name>
+        <value>0</value>
+    </SliderInt_snow_x>
+    <SliderInt_snow_y>
+        <name>snow y</name>
+        <value>0</value>
+    </SliderInt_snow_y>
+    <SliderInt_snow_z>
+        <name>snow z</name>
+        <value>0</value>
+    </SliderInt_snow_z>
+    <SliderInt_smoke_x>
+        <name>smoke x</name>
+        <value>-371</value>
+    </SliderInt_smoke_x>
+    <SliderInt_smoke_y>
+        <name>smoke y</name>
+        <value>-357</value>
+    </SliderInt_smoke_y>
+    <SliderInt_smoke_z>
+        <name>smoke z</name>
+        <value>0</value>
+    </SliderInt_smoke_z>
+    <SliderInt_clouds_x>
+        <name>clouds x</name>
+        <value>0</value>
+    </SliderInt_clouds_x>
+    <SliderInt_clouds_y>
+        <name>clouds y</name>
+        <value>-118</value>
+    </SliderInt_clouds_y>
+    <SliderInt_clouds_z>
+        <name>clouds z</name>
+        <value>0</value>
+    </SliderInt_clouds_z>
+    <SliderInt_comic_x>
+        <name>comic x</name>
+        <value>0</value>
+    </SliderInt_comic_x>
+    <SliderInt_comic_y>
+        <name>comic y</name>
+        <value>-220</value>
+    </SliderInt_comic_y>
+    <SliderInt_comic_z>
+        <name>comic z</name>
+        <value>-400</value>
+    </SliderInt_comic_z>
     <SliderInt_snow_amount>
         <name>snow amount</name>
         <value>200</value>
