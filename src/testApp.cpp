@@ -12,6 +12,14 @@
 //      Last revision by Jason Walters on January 9th, 2013
 //      Compatible with openFrameworks 0073, written on a Mac.
 //
+//
+//      HOW TO USE
+//      * define your display resolution in main.cpp
+//
+//      * when running - press spacebar to access GUI
+//                     - press / to toggle fullscreen
+//                     - use GUI POSITION(s) to adjust objects on screen
+//
 //--------------------------------------------------------------
 
 #include "testApp.h"
@@ -24,7 +32,7 @@ void testApp::setup() {
     
 	ofBackground(255, 255, 255);    //sets the background to white
     ofSetLogLevel(OF_LOG_VERBOSE);  //sets the log level to verbose
-    ofToggleFullscreen();
+    //ofToggleFullscreen();
     
     setupGUI();         // gui setup
     setupKinect();      // kinect setup
@@ -75,12 +83,13 @@ void testApp::setupGUI() {
     gui.addToggle("7 sounds", soundsOn);
     gui.addToggle("8 joints", jointsOn);
     
-    /*
-    gui.addTitle("POSITION").setNewColumn(true);
+    gui.addTitle("POSITION WORLD").setNewColumn(true);
     gui.addSlider("world x", xWorld, -2560, 2560);
     gui.addSlider("world y", yWorld, -1440, 1440);
     gui.addSlider("world z", zWorld, -1000, 1000);
     gui.addTitle("");  // creates a blank space
+    
+    gui.addTitle("POSITION OBJECTS").setNewColumn(true);
     gui.addSlider("snowman x", avatarXpos, -2560, 2560);
     gui.addSlider("snowman y", avatarYpos, -1440, 1440);
     gui.addSlider("snowman z", avatarZpos, -1000, 1000);
@@ -105,7 +114,6 @@ void testApp::setupGUI() {
     gui.addSlider("comic y", comicYpos, -1440, 1440);
     gui.addSlider("comic z", comicZpos, -1000, 1000);
     gui.addTitle("");  // creates a blank space
-     */
     
     gui.addTitle("SNOW").setNewColumn(true);
     gui.addSlider("snow amount", snowAmt, 1, 200);
@@ -113,7 +121,7 @@ void testApp::setupGUI() {
     gui.addSlider("snow max size", snowMaxSize, 1, 50);
     gui.addSlider("snow speed", snowSpeed, 0, 2);
     gui.addTitle("");  // creates a blank space
-
+    
     gui.addTitle("SMOKE");
     gui.addSlider("smoke amount", smokeAmt, 1, 200);
     gui.addSlider("smoke frequency", smokeFreq, 1, 200);
@@ -149,7 +157,7 @@ void testApp::setupKinect() {
 	grayImage.allocate(kinect.width, kinect.height);
 	grayThreshNear.allocate(kinect.width, kinect.height);
 	grayThreshFar.allocate(kinect.width, kinect.height);
-		
+    
 	kinect.setCameraTiltAngle(angle);
     kinect.enableDepthNearValueWhite(depthWhite);
 }
@@ -304,31 +312,31 @@ void testApp::setupAvatar() {
         ofxBox2dRect rHead;
         rHead.setPhysics(3.0, 0.53, 0.1);
         rHead.setup(box2d.getWorld(), ofGetWidth()/2, ofGetHeight()/2-420, 151,197);
-            b2Filter filter0;
-            filter0.categoryBits = 0x0002;
-            filter0.maskBits = 0x0004;
-            filter0.groupIndex = -2;
-            rHead.setFilterData(filter0);
-            rHead.setData(new SoundData());
-            SoundData * sd1 = (SoundData*)rHead.getData();
-            sd1 = (SoundData*)rHead.getData();
-            sd1->soundID = ofRandom(0, N_SOUNDS);
-            sd1->bHit	= false;
+        b2Filter filter0;
+        filter0.categoryBits = 0x0002;
+        filter0.maskBits = 0x0004;
+        filter0.groupIndex = -2;
+        rHead.setFilterData(filter0);
+        rHead.setData(new SoundData());
+        SoundData * sd1 = (SoundData*)rHead.getData();
+        sd1 = (SoundData*)rHead.getData();
+        sd1->soundID = ofRandom(0, N_SOUNDS);
+        sd1->bHit	= false;
         rectHead.push_back(rHead);
         
         // Body
         ofxBox2dRect rBody;
         rBody.setPhysics(3.0, 0.53, 0.1);
         rBody.setup(box2d.getWorld(), ofGetWidth()/2, ofGetHeight()/2-100, 178,169);
-            b2Filter filter1;
-            filter1.categoryBits = 0x0002;
-            filter1.maskBits = 0x0004;
-            filter1.groupIndex = -2;
-            rBody.setFilterData(filter1);
-            rBody.setData(new SoundData());
-            SoundData * sd2 = (SoundData*)rBody.getData();
-            sd2->soundID = ofRandom(0, N_SOUNDS);
-            sd2->bHit	= false;
+        b2Filter filter1;
+        filter1.categoryBits = 0x0002;
+        filter1.maskBits = 0x0004;
+        filter1.groupIndex = -2;
+        rBody.setFilterData(filter1);
+        rBody.setData(new SoundData());
+        SoundData * sd2 = (SoundData*)rBody.getData();
+        sd2->soundID = ofRandom(0, N_SOUNDS);
+        sd2->bHit	= false;
         rectBody.push_back(rBody);
         
         // Base
@@ -348,13 +356,13 @@ void testApp::setupAvatar() {
         rRArm.setPhysics(3.0, 0.53, 0.1);
         rRArm.setup(box2d.getWorld(), ofGetWidth()/2+320, ofGetHeight()/2-100, 43,217);
         rectRArm.push_back(rRArm);
-            
+        
         // Suspension node - bottom left
         ofxBox2dRect bLeft;
         bLeft.setPhysics(0, 0, 0);
         bLeft.setup(box2d.getWorld(), ofGetWidth()/2-50, ofGetHeight(), 20, 20);
         bottomLeft.push_back(bLeft);
-    
+        
         // Suspension node - bottom right
         ofxBox2dRect bRight;
         bRight.setPhysics(0, 0, 0);
@@ -398,7 +406,7 @@ void testApp::updateKinect() {
     kinect.update();
     kinect.setCameraTiltAngle(angle);
     kinect.enableDepthNearValueWhite(depthWhite);
-
+    
 	// there is a new frame and we are connected
 	if(kinect.isFrameNew()) {
 		
@@ -589,10 +597,10 @@ void testApp::updateClouds() {
         }
         
         if ((int)clouds[0].getPosition().x == ofGetWidth()/2) {
-                ofxBox2dRect cClouds2;
-                cClouds2.setPhysics(1, 0.5, 0.9);
-                cClouds2.setup(box2dClouds.getWorld(), -200, ofRandom(60,240), 615/cloudsSize, 313/cloudsSize);
-                clouds2.push_back(cClouds2);
+            ofxBox2dRect cClouds2;
+            cClouds2.setPhysics(1, 0.5, 0.9);
+            cClouds2.setup(box2dClouds.getWorld(), -200, ofRandom(60,240), 615/cloudsSize, 313/cloudsSize);
+            clouds2.push_back(cClouds2);
         }
         
         //KILL clouds if off-screen
@@ -617,7 +625,7 @@ void testApp::updateClouds() {
 
 //--------------------------------------------------------------
 void testApp::updateScore() {
-
+    
     frame += (ofGetFrameNum() * 0) + 1;
     frame100 += (ofGetFrameNum() * 0) + 1;
     
@@ -653,20 +661,22 @@ void testApp::updateScore() {
 void testApp::draw() {
     
     //draw layers
-    ofPushMatrix();
-    ofTranslate(xWorld, yWorld, zWorld);
-    
     drawBackground();   // draw background
     drawSnow();         // draw snowflakes
     drawSmoke();        // draw chimney smoke
     drawClouds();       // draw clouds
+    
+    ofPushMatrix();
+    ofTranslate(xWorld, yWorld, zWorld);
     drawContours();     // draw user's contours
     drawAvatar();       // draw snowman
     drawComicWords();   // draw comicWords
+    ofPopMatrix();
+    
     drawMusic();        // draw music
     drawScore();        // draw score
     
-    ofPopMatrix();
+    // ofPopMatrix();
     
     gui.draw();         // draw gui
 }
