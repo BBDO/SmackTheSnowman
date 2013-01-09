@@ -30,9 +30,9 @@ void testApp::setup() {
     // Github issue: https://github.com/openframeworks/openFrameworks/issues/1292
     // OF Forum:  http://forum.openframeworks.cc/index.php/topic,9919.msg45469.html#msg45469
     
-	ofBackground(255, 255, 255);    //sets the background to white
+    ofBackground(255, 255, 255);    //sets the background to white
     ofSetLogLevel(OF_LOG_VERBOSE);  //sets the log level to verbose
-    //ofToggleFullscreen();
+    ofToggleFullscreen();
     
     setupGUI();         // gui setup
     setupKinect();      // kinect setup
