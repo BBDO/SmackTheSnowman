@@ -8,10 +8,12 @@ Developed by Jason Walters
 Included are all required addon's in Addons.zip, located in bin/data.
 Unpack and move to openFrameworks/addons folder before using.
 
+**All artwork property of BBDO and can not be used for commercial use.
+
 How to use
-1.  define your display resolution in main.cpp
-2.  while running - press spacebar to access GUI
-                  - press / to toggle fullscreen
-                  - use GUI POSITION(s) to adjust objects on screen
+1.  define your display resolution in main.cpp.
+2.  while running - press spacebar to access GUI.
+                  - press / to toggle fullscreen.
+                  - use GUI POSITION(s) to adjust objects on screen.
                   
 #ENJOY!
