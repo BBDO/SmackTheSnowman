@@ -2,8 +2,12 @@
 //
 //      BBDO WINTER 2012 INSTALLATION
 //
-//      Created by Mathias Appelblad, Sermad Buni, and Jason Walters
+//      Created by Mathias Appelblad, Sermad Buni, Jason Walters, and Michael Enerva
 //      Developed by Jason Walters
+//      Artwork by Michael Enerva
+//
+//      All artwork is property of BBDO and can not be used
+//      for commercial use.  Thank you!
 //
 //      Last revision by Jason Walters on January 9th, 2013
 //      Compatible with openFrameworks 0073, written on a Mac.
